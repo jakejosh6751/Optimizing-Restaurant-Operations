@@ -6,7 +6,8 @@ This project carefully examines restaurant order data to identify key trends and
 
 The data set used in this analysis from "Maven Analytics" has two tables with a quarter's worth of orders from a fictitious restaurant serving international cuisine, including the date and time of each order, the items ordered, and additional details on the type, name and price of the items.
 
-### Database Modeling
+### Database Modeling script (SQL Server):
+
 
 ### Data Extraction
 
