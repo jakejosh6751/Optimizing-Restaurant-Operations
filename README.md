@@ -19,9 +19,10 @@ The data set used in this analysis from "Maven Analytics" has two tables with a 
 
 ### Data Exploration (questions & chart type):
 
-### Report, Insight, and Recommendations:
-
+### Report:
 ![restaurant orders report_1.jpg](https://github.com/jakejosh6751/Optimizing-Restaurant-Operations/blob/main/restaurant%20orders%20report_1.jpg)
+link to interactive power bi report
 
+### Insight and Recommendations:
 ![restaurant orders report_2.jpg](https://github.com/jakejosh6751/Optimizing-Restaurant-Operations/blob/main/restaurant%20orders%20report_2.jpg)
 
