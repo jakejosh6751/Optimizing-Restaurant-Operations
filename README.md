@@ -21,7 +21,7 @@ The data set used in this analysis from "Maven Analytics" has two tables with a 
 
 ### Report:
 ![restaurant orders report_1.jpg](https://github.com/jakejosh6751/Optimizing-Restaurant-Operations/blob/main/restaurant%20orders%20report_1.jpg)
-link to interactive power bi report
+[Interactive Power BI report]()
 
 ### Insight and Recommendations:
 ![restaurant orders report_2.jpg](https://github.com/jakejosh6751/Optimizing-Restaurant-Operations/blob/main/restaurant%20orders%20report_2.jpg)
