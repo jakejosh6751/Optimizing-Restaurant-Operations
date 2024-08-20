@@ -1,5 +1,3 @@
-![restaurant orders report_1.jpg](https://github.com/jakejosh6751/Optimizing-Restaurant-Operations/blob/main/restaurant%20orders%20report_1.jpg)
-
 # Optimizing-Restaurant-Operations:
 ## Analyzing Order Patterns to Enhance Efficiency and Boost Sales
 
