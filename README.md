@@ -11,7 +11,7 @@ The data set used in this analysis from "Maven Analytics" has two tables with a 
 
 ### Data Extraction:
 
-### Data Transformation:
+### Data Preprocessing:
 * data types
 * dax
 * calculated columns
