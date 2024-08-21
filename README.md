@@ -28,6 +28,7 @@ from order_details o
 	left join menu_items m
 		on o.item_id = m.menu_item_id;
 ```
+transform data...
 
 ### Data Preprocessing:
 * Date Table
