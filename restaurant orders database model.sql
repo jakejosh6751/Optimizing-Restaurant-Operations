@@ -1,25 +1,19 @@
 
--- 1. Problem Statement
--- 2. Model Database
-		-- a) Create Database
-		-- b) Create Tables
--- 3. Load Data into Tables from External Source
--- 4. Clean and Preprocess Data
--- 5. Extract Relevant Data for Analysis using SQL Query
--- ================================================================
+-- 1. Create Database and Tables
+-- 2. Load Data into Tables from csv files
+-- 3. Clean Data
+-- 4. Extract Data for Analysis
+--======================================================
 
--- 1. Problem Statement
-/* A quarter's worth of data from a fictitious restaurant serving international cuisine, including ... */
+-- 1. Create Database and Tables
 
--- 2. Model Database
-
-		-- a) Create Database
+-- RestaurantOrders Database
 create database RestaurantOrders;
 go
 use RestaurantOrders;
 go
-		-- b) Create Tables
--- menu_items table
+
+-- menu_items Table
 create table menu_items (
 	menu_item_id int primary key,
 	item_name nvarchar(50) not null,
@@ -28,7 +22,7 @@ create table menu_items (
 	);
 go
 
--- order_details table
+-- order_details Table
 create table order_details (
 	order_details_id int primary key,
 	order_id int not null,
@@ -39,7 +33,7 @@ create table order_details (
 	);
 go
 
--- 3. Load Data into Tables from External Source
+-- 2. Load Data into Tables from csv files
 
 -- insert data into menu_items table
 bulk insert menu_items
@@ -53,7 +47,7 @@ go
 
 -- insert data into order_details table
 /* Attribute "item_id" has mixed data type (integer and strings); "NULL" is used in place of BLANKS.
-The "Find and Replace" feature in Excel is used to remove "NULL", leaving the affected cells blank and file is saved as csv. */
+The "Find and Replace" feature in Excel is used to remove "NULL", leaving the affected cells blank and file is saved as csv */
 bulk insert order_details
 from 'C:\Users\jake\Desktop\restaurant orders analysis\Restaurant+Orders+CSV\order_details_edited.csv'
 with (
@@ -63,21 +57,19 @@ with (
 	);
 go
 
--- 4. Clean and Preprocess Data
+-- 3. Clean Data
 
-		-- a) missing values
--- count nulls = 137
+-- missing values
 select count(*)
 from order_details
-where item_id is null;
+where item_id is null;		-- 137 values in the item_id column are missing
 
--- delete rows with missing values. final entries = 12,097
+-- delete rows with missing values
 delete
 from order_details
-where item_id is null;
+where item_id is null;		-- final number of entries is 12,097
 
-		-- b) duplicates
--- check duplicate entries
+-- duplicate entries
 with cte as (
 	select
 		order_details_id, order_id, order_date, order_time, item_id,
@@ -87,13 +79,11 @@ with cte as (
 		order_details_id, order_id, order_date, order_time, item_id) as row_num
 	from order_details
 	)
-	select count(*) from cte where row_num > 1;
+	select count(*) from cte where row_num > 1;			-- no duplicates
 
-		-- c) structural errors = none
-		-- d) invalid data = none
+-- no structural errors, invalid data, outliers, inconsistent data or data type problems
 
--- 5. Extract Data for Analysis using SQL Query
-
+-- 4. Extract Data for Analysis
 select
 	--o.item_id,
 	--m.menu_item_id,
@@ -106,7 +96,3 @@ select
 from order_details o
 	left join menu_items m
 		on o.item_id = m.menu_item_id;
-
-
-
-use RestaurantOrders;
