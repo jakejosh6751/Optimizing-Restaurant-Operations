@@ -10,6 +10,20 @@ The data set used in this analysis from "Maven Analytics" has two tables with a 
 [restaurant orders analytics.sql](https://github.com/jakejosh6751/Optimizing-Restaurant-Operations/blob/main/restaurant%20orders%20analytics.sql)
 
 ### Data Extraction:
+```sql
+select
+	--o.item_id,
+	--m.menu_item_id,
+	order_id,
+	m.item_name,
+	m.category,
+	m.price,
+	o.order_date,
+	cast(datepart(hour, o.order_time) as varchar(2)) + ':00:00' as order_hour
+from order_details o
+	left join menu_items m
+		on o.item_id = m.menu_item_id;
+```
 
 ### Data Preprocessing:
 * data types
