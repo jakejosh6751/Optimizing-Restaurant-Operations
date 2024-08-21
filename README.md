@@ -10,6 +10,7 @@ The data set used in this analysis from "Maven Analytics" has two tables with a 
 A database is created for cases where the analysis is a continuous process to simplify data management and analysis pipeline by connecting to Power BI for visualization.
 
 See database modeling script (SQL Server):
+
 [restaurant orders analytics.sql](https://github.com/jakejosh6751/Optimizing-Restaurant-Operations/blob/main/restaurant%20orders%20analytics.sql)
 
 ### Data Extraction:
