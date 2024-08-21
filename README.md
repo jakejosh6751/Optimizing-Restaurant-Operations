@@ -28,7 +28,7 @@ from order_details o
 	left join menu_items m
 		on o.item_id = m.menu_item_id;
 ```
-Before loading data, the data type for "order_hour" is adjusted to time. It is initially assigned "text" in power bi because of the format used in the SQL query statement.
+Before loading data, the data type for "order_hour" is adjusted to 'time'. It is initially assigned 'text' in power bi because of the format used in the SQL query statement.
 
 ### Data Preprocessing:
 * Date Table
