@@ -62,7 +62,7 @@ A new column is added to the original table
 order_hour am/pm = FORMAT(restaurant_orders[order_hour], "h am/pm")
 ```
 
-### Data Exploration (questions):
+### Data Exploration:
 The following questions were explored;
 1. What were the top 5 and bottom 5 ordered items? What categories were they in?
 2. Were there certain times or days that had more or less orders?
