@@ -7,7 +7,8 @@ This project carefully examines restaurant order data to identify key trends and
 The data set used in this analysis from "Maven Analytics" has two tables with a quarter's worth of orders from a fictitious restaurant serving international cuisine, including the date and time of each order, the items ordered, and additional details on the type, name and price of the items.
 
 ### Database Modeling:
-A database is created for cases where the analysis is a continuous process to simplify data management and analysis pipeline process by connecting to Power BI for visualization.
+A database is created for cases where the analysis is a continuous process to simplify data management and analysis pipeline by connecting to Power BI for visualization.
+
 See database modeling script (SQL Server):
 [restaurant orders analytics.sql](https://github.com/jakejosh6751/Optimizing-Restaurant-Operations/blob/main/restaurant%20orders%20analytics.sql)
 
