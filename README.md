@@ -46,7 +46,7 @@ ADDCOLUMNS(
     "DayOfMonth", day([Date])
 )
 ```
-* Power BI DAX
+* Measure
 ```dax
 Total Orders = COUNTROWS('restaurant_orders')
 ```
