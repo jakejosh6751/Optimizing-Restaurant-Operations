@@ -32,6 +32,7 @@ Before loading data, the data type for "order_hour" is adjusted to 'time'. It is
 
 ### Data Preprocessing:
 * Date Table
+A calendar table is created in Power BI with the following script to support charts with date data;
 ```dax
 dim_date = 
 ADDCOLUMNS(
@@ -47,10 +48,13 @@ ADDCOLUMNS(
 )
 ```
 * Measure
+The "Total Orders" Measure is created to ensure number formatting with the comma (,);
 ```dax
 Total Orders = COUNTROWS('restaurant_orders')
 ```
 * Calculated Column
+A new column is added to the original table
+"restaurant_orders" with the following script to enable hourly display with the am/pm format in graphs;
 ```dax
 order_hour am/pm = FORMAT(restaurant_orders[order_hour], "h am/pm")
 ```
