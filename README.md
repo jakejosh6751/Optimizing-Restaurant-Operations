@@ -14,7 +14,7 @@ See database modeling script (SQL Server):
 
 ### Data Extraction:
 Data is fetched into Power BI from SQL Server using the "import" connectivity mode. The following SQL statement is used;
-```
+```sql
 select
 	--o.item_id,
 	--m.menu_item_id,
@@ -32,7 +32,7 @@ transform data...
 
 ### Data Preprocessing:
 * Date Table
-```dax
+```
 dim_date = 
 ADDCOLUMNS(
  CALENDAR(DATE(2023,1,1),DATE(2023,12,31)),
