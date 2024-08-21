@@ -63,6 +63,10 @@ order_hour am/pm = FORMAT(restaurant_orders[order_hour], "h am/pm")
 ```
 
 ### Data Exploration (questions):
+The following questions were explored;
+1. What were the top 5 and bottom 5 ordered items? What categories were they in?
+2. Were there certain times or days that had more or less orders?
+3. Which cuisines should we focus on developing more menu items for based on the data?
 
 ### Report:
 ![restaurant orders report_1.jpg](https://github.com/jakejosh6751/Optimizing-Restaurant-Operations/blob/main/restaurant%20orders%20report_1.jpg)
