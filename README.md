@@ -50,7 +50,7 @@ ADDCOLUMNS(
 ```dax
 Total Orders = COUNTROWS('restaurant_orders')
 ```
-* Calculated Columns
+* Calculated Column
 ```dax
 order_hour am/pm = FORMAT(restaurant_orders[order_hour], "h am/pm")
 ```
