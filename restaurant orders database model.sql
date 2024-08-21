@@ -1,4 +1,3 @@
-
 -- 1. Create Database and Tables
 -- 2. Load Data into Tables from csv files
 -- 3. Clean Data
