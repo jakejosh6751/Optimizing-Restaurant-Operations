@@ -30,10 +30,9 @@ from order_details o
 ```
 
 ### Data Preprocessing:
-* data types
-* dax
-* calculated columns
-* date table
+* Date Table
+* Power BI DAX
+* Calculated Columns
 
 ### Data Exploration (questions & chart type):
 
