@@ -47,7 +47,13 @@ ADDCOLUMNS(
 )
 ```
 * Power BI DAX
+```dax
+Total Orders = COUNTROWS('restaurant_orders')
+```
 * Calculated Columns
+```dax
+order_hour am/pm = FORMAT(restaurant_orders[order_hour], "h am/pm")
+```
 
 ### Data Exploration (questions):
 
