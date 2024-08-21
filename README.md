@@ -10,6 +10,7 @@ The data set used in this analysis from "Maven Analytics" has two tables with a 
 [restaurant orders analytics.sql](https://github.com/jakejosh6751/Optimizing-Restaurant-Operations/blob/main/restaurant%20orders%20analytics.sql)
 
 ### Data Extraction:
+Data is fetched into Power BI from SQL Server using the "import" connectivity mode. The following SQL statement is used;
 ```sql
 select
 	--o.item_id,
