@@ -35,7 +35,7 @@ transform data...
 * Power BI DAX
 * Calculated Columns
 
-### Data Exploration (questions & chart type):
+### Data Exploration (questions):
 
 ### Report:
 ![restaurant orders report_1.jpg](https://github.com/jakejosh6751/Optimizing-Restaurant-Operations/blob/main/restaurant%20orders%20report_1.jpg)
