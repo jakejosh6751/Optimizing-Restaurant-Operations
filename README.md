@@ -32,7 +32,7 @@ transform data...
 
 ### Data Preprocessing:
 * Date Table
-```
+```dax
 dim_date = 
 ADDCOLUMNS(
  CALENDAR(DATE(2023,1,1),DATE(2023,12,31)),
