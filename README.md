@@ -33,7 +33,7 @@ Before loading data, the data type for "order_hour" is adjusted to 'time'. It is
 ### Data Preprocessing:
 * Date Table
 
- A calendar table is created in Power BI with the following script to support charts with date data;
+A calendar table is created in Power BI with the following script to support charts with date data;
 ```dax
 dim_date = 
 ADDCOLUMNS(
