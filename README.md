@@ -32,6 +32,20 @@ transform data...
 
 ### Data Preprocessing:
 * Date Table
+```sql
+dim_date = 
+ADDCOLUMNS(
+ CALENDAR(DATE(2023,1,1),DATE(2023,12,31)),
+    "Year", YEAR([Date]),
+    "Month", FORMAT([Date],"mmm"),
+    "month num", MONTH([Date]),
+    "Quarter", FORMAT([Date], "\QQ"),
+    "Weekday", FORMAT([Date],"ddd"),
+    "weekday num", WEEKDAY([Date]),
+    "Week num", WEEKNUM([Date]),
+    "DayOfMonth", day([Date])
+)
+```
 * Power BI DAX
 * Calculated Columns
 
