@@ -70,7 +70,7 @@ The following questions were explored;
 
 ### Report:
 ![restaurant orders report_1.jpg](https://github.com/jakejosh6751/Optimizing-Restaurant-Operations/blob/main/restaurant%20orders%20report_1.jpg)
-[Interactive Power BI report]()
+[Interactive Power BI report](https://app.powerbi.com/groups/me/reports/e82e0178-1c60-452d-a3f6-de0cfbff85ab/ReportSection?experience=power-bi)
 
 ### Insight and Recommendations:
 ![restaurant orders report_2.jpg](https://github.com/jakejosh6751/Optimizing-Restaurant-Operations/blob/main/restaurant%20orders%20report_2.jpg)
