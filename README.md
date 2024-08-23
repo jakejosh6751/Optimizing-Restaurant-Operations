@@ -30,7 +30,7 @@ from order_details o
 ```
 Before loading data, the data type for "order_hour" is adjusted to 'time'. It is initially assigned 'text' in power bi because of the format used in the SQL query statement.
 
-### Data Preprocessing:
+### Data Pre-processing:
 * Date Table
 
 A calendar table is created in Power BI with the following script to support charts with date data;
